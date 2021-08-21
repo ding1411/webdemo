@@ -707,7 +707,7 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .sidebar {
     width: 6rem;
   }
@@ -859,7 +859,7 @@ video {
   padding: 0.5rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .content-nav .grouped-buttons li {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -882,7 +882,7 @@ video {
   outline-offset: 2px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 640px) {
   #search {
     width: auto;
   }
@@ -900,7 +900,7 @@ video {
   flex-wrap: wrap;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .cards-wrapper .inner-wrapper-1 {
     flex-direction: row;
   }
@@ -913,7 +913,7 @@ video {
   flex-wrap: wrap;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .cards-wrapper .inner-wrapper-2 {
     flex-direction: row;
   }
@@ -939,7 +939,7 @@ video {
   height: 16rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .card.card-lg .cardcontent {
     height: 20rem;
   }
