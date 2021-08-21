@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: SourceHanSans;
+        src: url(./fonts/SourceHanSansCN-VF.ttf.woff2);
+    }
+    @font-face {
+        font-family: SourceSans;
+        src: url(./fonts/SourceSans3VF-Roman.otf.woff), url(./fonts/SourceSans3VF-Italics.otf.woff);
+    }
+}
+
+.wrapper {
+    @apply min-h-screen min-w-full flex;
+}
+
+.sidebar {
+    @apply w-1/6 sm:w-24 min-h-screen bg-white flex flex-col items-center shadow-md;
+}
+
+.content-wrapper {
+    @apply p-4 flex-auto bg-gray-100;
+}
+
+.navhead {
+    @apply flex-grow-0 mb-6 p-2 flex flex-col items-center;
+    & .iconimg {
+        @apply block rounded-md shadow-md;
+    }
+}
+
+.xs-distext {
+    /* Descriptive text size xs */
+    @apply text-gray-500 text-xs font-source;
+}
+
+.sm-distext {
+    @apply text-gray-500 text-sm font-source;
+}
+
+.md-headtext {
+    @apply text-gray-500 text-base font-source font-bold;
+}
+
+.xl2-headtext {
+    @apply text-gray-500 text-2xl font-source font-bold;
+}
+
+.func-container {
+    /* Function buttons' container */
+    @apply flex-initial flex flex-col justify-center self-stretch;
+}
+
+.func-button {
+    @apply py-2 border-l-4 border-black border-opacity-0;
+    &.active {
+        @apply border-opacity-50;
+    }
+}
+
+.button-link {
+    @apply p-2 flex flex-col items-center;
+}
+
+.button-icon {
+    @apply my-2 text-gray-500 filter drop-shadow-md;
+}
+
+.sidebar footer {
+    @apply mt-4 self-stretch;
+}
+
+.hr35 {
+    @apply mx-auto w-3/5 border-black border-opacity-10;
+}
+
+.content-nav {
+    @apply ml-2 flex flex-row justify-between items-center;
+
+    & .searchbar {
+        @apply bg-gray-200 rounded-md overflow-hidden;
+    }
+
+    & .grouped-buttons {
+        @apply h-8 flex flex-initial justify-around items-center;
+
+        & li {
+            @apply p-2 sm:px-4;
+
+            & a {
+                @apply block;
+            }
+        }
+    }
+}
+
+#search {
+    @apply h-8 p-2 w-16 xs:w-auto focus:outline-none bg-transparent;
+}
+
+.cards-wrapper {
+    @apply flex flex-col;
+
+    & .inner-wrapper-1 {
+        @apply flex-auto flex flex-col flex-wrap md:flex-row;
+    }
+
+    & .inner-wrapper-2 {
+        @apply flex-auto flex flex-col flex-wrap sm:flex-row;
+    }
+}
+
+.card {
+    @apply mx-2 mb-4 flex-auto bg-gray-200 rounded-md shadow-md;
+
+    &.card-lg {
+        @apply max-w-3xl;
+        & .cardcontent {
+            @apply h-64 md:h-80;
+        }
+    }
+
+    &.card-md {
+        @apply max-w-xl flex-grow-2;
+        & .cardcontent {
+            @apply h-64;
+        }
+    }
+
+    &.card-sm {
+        @apply max-w-sm;
+        & .cardcontent {
+            @apply h-48;
+        }
+    }
+
+    & .cardhead {
+        @apply  p-4 h-12 flex flex-initial justify-between items-center;
+    }
+
+    & .cardbody {
+        @apply w-full px-4 pb-4;
+    }
+
+    & .cardcontent {
+        @apply w-full rounded-md;
+    }
+}
+
+#foot p a{
+    @apply mx-2;
+}
