@@ -18,7 +18,7 @@
 }
 
 .sidebar {
-    @apply w-1/6 md:w-24 min-h-screen bg-white flex flex-col items-center shadow-md;
+    @apply w-1/6 lg:w-24 min-h-screen bg-white flex flex-col items-center shadow-md;
 }
 
 .content-wrapper {
@@ -117,21 +117,21 @@
     @apply mx-2 mb-4 flex-auto bg-gray-200 rounded-md shadow-md;
 
     &.card-lg {
-        @apply max-w-3xl;
+        @apply max-w-full;
         & .cardcontent {
             @apply h-64 lg:h-80;
         }
     }
 
     &.card-md {
-        @apply max-w-xl flex-grow-2;
+        @apply max-w-full flex-grow-2;
         & .cardcontent {
             @apply h-64;
         }
     }
 
     &.card-sm {
-        @apply max-w-sm;
+        @apply max-w-full;
         & .cardcontent {
             @apply h-48;
         }
