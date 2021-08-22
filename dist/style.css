@@ -646,14 +646,6 @@ video {
   flex-direction: column;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -665,6 +657,10 @@ video {
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-right {
@@ -731,13 +727,15 @@ video {
 
 .navhead .iconimg {
   display: block;
+  width: 4rem;
+  flex: 0 1 auto;
   border-radius: 0.375rem;
   --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .xs-distext {
-  /* Descriptive text size xs */
+  /* Descriptive text size extra-small */
   font-family: SourceSans, Helvetiva, Arial, SourceHanSans, "Microsoft Yahei", sans-serif;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -754,6 +752,7 @@ video {
 }
 
 .md-headtext {
+  /* Header text size medium */
   font-family: SourceSans, Helvetiva, Arial, SourceHanSans, "Microsoft Yahei", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -772,7 +771,7 @@ video {
 }
 
 .func-container {
-  /* Function buttons' container */
+  /* Siderbar function buttons' container */
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
@@ -800,6 +799,8 @@ video {
   padding: 0.5rem;
 }
 
+/* Applied to many ↑↓ */
+
 .button-icon {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -824,6 +825,7 @@ video {
 }
 
 .hr35 {
+  /* Division bar */
   margin-left: auto;
   margin-right: auto;
   width: 60%;
@@ -983,9 +985,49 @@ video {
   border-radius: 0.375rem;
 }
 
-#foot p a{
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+#foot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+@media (min-width: 480px) {
+  #foot {
+    align-items: center;
+  }
+}
+
+#foot p {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+@media (min-width: 768px) {
+  #foot p {
+    display: block;
+  }
+}
+
+#foot p a {
+  margin: 0.25rem;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #foot p a {
+    display: inline;
+  }
+}
+
+#foot p span {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #foot p span {
+    display: inline;
+  }
 }
 
 @media (min-width: 640px) {

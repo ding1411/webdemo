@@ -28,12 +28,12 @@
 .navhead {
     @apply flex-grow-0 mb-6 p-2 flex flex-col items-center;
     & .iconimg {
-        @apply block rounded-md shadow-md;
+        @apply w-16 flex-initial block rounded-md shadow-md;
     }
 }
 
 .xs-distext {
-    /* Descriptive text size xs */
+    /* Descriptive text size extra-small */
     @apply text-gray-500 text-xs font-source;
 }
 
@@ -42,6 +42,7 @@
 }
 
 .md-headtext {
+    /* Header text size medium */
     @apply text-gray-500 text-base font-source font-bold;
 }
 
@@ -50,7 +51,7 @@
 }
 
 .func-container {
-    /* Function buttons' container */
+    /* Siderbar function buttons' container */
     @apply flex-initial flex flex-col justify-center self-stretch;
 }
 
@@ -64,7 +65,7 @@
 .button-link {
     @apply p-2 flex flex-col items-center;
 }
-
+/* Applied to many ↑↓ */
 .button-icon {
     @apply my-2 text-gray-500 filter drop-shadow-md;
 }
@@ -74,6 +75,7 @@
 }
 
 .hr35 {
+    /* Division bar */
     @apply mx-auto w-3/5 border-black border-opacity-10;
 }
 
@@ -150,6 +152,17 @@
     }
 }
 
-#foot p a{
-    @apply mx-2;
+#foot {
+    @apply p-2 flex justify-between items-end xs:items-center;
+
+    & p {
+        @apply flex flex-wrap-reverse md:block;
+
+        & a {
+            @apply m-1 block md:inline;
+        }
+        & span {
+            @apply hidden md:inline;
+        }
+    }
 }
