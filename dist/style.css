@@ -1011,7 +1011,7 @@ video {
 
 #foot p {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 768px) {

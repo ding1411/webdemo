@@ -158,7 +158,7 @@
     @apply p-2 flex justify-between items-end xs:items-center;
 
     & p {
-        @apply flex flex-wrap-reverse md:block;
+        @apply flex flex-wrap md:block;
 
         & a {
             @apply m-1 block md:inline;
