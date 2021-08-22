@@ -6,7 +6,7 @@
     <meta name="viewport"  content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css" rel="stylesheet">
-    <title>测试文档 - 统计</title>
+    <title>测试文档 - 地图</title>
 </head>
 <body>
     <div class="wrapper">
@@ -22,14 +22,14 @@
             </div>
             
             <ul class="func-container">
-                <li class="func-button active">
+                <li class="func-button">
                     <a class="button-link" href="index.html" title="统计">
                         <i class="button-icon fas fa-chart-pie"></i>
                         <div class="sm-distext">统计</div>
                     </a>
                 </li>
                 <hr class="hr35">
-                <li class="func-button">
+                <li class="func-button active">
                     <a class="button-link" href="map.html" title="地图">
                         <i class="button-icon fas fa-map-marked-alt"></i>
                         <div class="sm-distext">地图</div>
@@ -92,80 +92,19 @@
             <div class="flex flex-col">
             <!-- Main Content -->
                 <header class="ml-2 my-4">
-                    <h1 class="xl2-headtext">统计</h1>
+                    <h1 class="xl2-headtext">地图</h1>
                     <div class="sm-distext">
                         <a href="index.html" title="首页">首页</a>
                         <i class="fas fa-angle-right text-gray-500 mx-1"></i>
-                        <a href="index.html" title="统计">统计</a>
+                        <a href="map.html" title="地图">地图</a>
                     </div>
                 </header>
                 
                 <div class="cards-wrapper">
                 <!-- Cards / Tools -->
 
-                    <div class="inner-wrapper-1">
-                        <div class="card card-md">
-                            <div class="cardhead">
-                                <h2 class="md-headtext">卡片标题1</h2>
-                                <a class="block" href="#">
-                                    <i class="button-icon fas fa-ellipsis-v"></i>
-                                </a>
-                            </div>
-                            <div class="w-full px-4 pb-4">
-                                <div id="sample1" class="cardcontent"></div>
-                            </div>
-                        </div>
-    
-                        <div class="inner-wrapper-2">
-                            <div class="card card-sm">
-                                <div class="cardhead">
-                                    <h2 class="md-headtext">卡片标题2</h2>
-                                    <a class="block" href="#">
-                                        <i class="button-icon fas fa-ellipsis-v"></i>
-                                    </a>
-                                </div>
-                                <div class="w-full px-4 pb-4">
-                                    <div id="sample2" class="cardcontent"></div>
-                                </div>
-                            </div>
-    
-                            <div class="card card-sm">
-                                <div class="cardhead">
-                                    <h2 class="md-headtext">卡片标题3</h2>
-                                    <a class="block" href="#">
-                                        <i class="button-icon fas fa-ellipsis-v"></i>
-                                    </a>
-                                </div>
-                                <div class="w-full px-4 pb-4">
-                                    <div id="sample3" class="cardcontent"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                      
-                    <div class="inner-wrapper-2">
-                        <div class="card card-lg">
-                            <div class="cardhead">
-                                <h2 class="md-headtext">卡片标题4</h2>
-                                <a class="block" href="#">
-                                    <i class="button-icon fas fa-ellipsis-v"></i>
-                                </a>
-                            </div>
-                            <div class="w-full px-4 pb-4">
-                                <div id="sample4" class="cardcontent"></div>
-                            </div>
-                        </div>
-                        <div class="card card-lg">
-                            <div class="cardhead">
-                                <h2 class="md-headtext">卡片标题5</h2>
-                                <a class="block" href="#">
-                                    <i class="button-icon fas fa-ellipsis-v"></i>
-                                </a>
-                            </div>
-                            <div class="w-full px-4 pb-4">
-                                <div id="sample5" class="cardcontent"></div>
-                            </div>
-                        </div>
+                    <div id="map">
+                        
                     </div>
 
                 </div>
@@ -187,7 +126,7 @@
     </div>
     <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=fa609d5251879632dfc193af4151ee8d">//临时key</script>
     <script>
-        var map = new AMap.Map('sample1', {
+        var map = new AMap.Map('map', {
             mapStyle: 'amap://styles/4320d3a19128fc1a0a632417ef5406fd',
             resizeEnable: true, //是否监控地图容器尺寸变化
             zoom: 8, //初始化地图层级
