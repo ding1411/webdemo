@@ -8,6 +8,7 @@ CSS 源文件位于 `css/` 目录下，使用 Tailwindcss 框架及 PostCSS 预�
 
 `css/` 目录中的 `style.css` 是页面使用的主要样式表，附加样式表使用 `@import` 方法引入到该样式表的头部。
 
+**后续更改请写入** `css/style.css`  **文档中，或在独立的 CSS 文档中编辑后使用** `@import` **方法加入该文档头部。**
 
 ***
 
