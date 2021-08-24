@@ -17,6 +17,7 @@ CSS 源文件位于 `css/` 目录下，使用 Tailwindcss 框架及 PostCSS 预�
 
 \* Visual Studio Code 编辑器内置有 Git 。
 
+Github 提供 [Github Desktop](https://desktop.github.com/) ，设置简单且拥有易于操作的图形界面。
 
 ## 开发工具
 
