@@ -6,7 +6,7 @@ Demo for 春苗计划
 
 CSS 源文件位于 `css/` 目录下，使用 Tailwindcss 框架及 PostCSS 预处理器编辑；输出目录及 html 文件位于 `dist/` 。
 
-`css/` 目录中的 `style.css` 是页面使用的主要样式表，附加样式表使用 `@import` 方法引入到该样式表的头部。
+`css/` 目录中的 `style.css` 是用于开发的主要样式表，附加样式表使用 `@import` 方法引入到该样式表的头部；使用 `npm watch` 实时查看编辑效果，使用 `npm build` 脚本输出精简后的文档至 `dist/style.css` 。
 
 **后续更改请写入** `css/style.css`  **文档中，或在独立的 CSS 文档中编辑后使用** `@import` **方法加入该文档头部。**
 
@@ -62,6 +62,14 @@ cd <当前目录的路径>
 
 ``` shell
 npm init
+```
+
+打开 `package.json` ，在 `scripts` 项中添加如下脚本
+
+``` json
+"watch": "postcss css/style.css -o dist/style.css --watch",
+"build": "NODE_ENV=production postcss css/style.css -o dist/style.css"
+// 注：Windows下须安装 cross-env，并在NODE_ENV前添加cross-env
 ```
 
 使用 `npm install` 命令安装组件

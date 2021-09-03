@@ -16,26 +16,29 @@
 }
 
 .wrapper {
+    /* 窗口容器 */
     @apply min-h-screen min-w-full flex;
 }
 
 .sidebar {
-    @apply w-1/6 lg:w-24 min-h-screen bg-white flex flex-col items-center shadow-md;
+    /* 侧边栏容器 */
+    @apply w-1/6 sm:w-24 min-h-screen bg-white flex flex-col items-center shadow-md;
 }
 
 .content-wrapper {
+    /* 右侧内容区容器 */
     @apply p-4 flex-auto bg-gray-100;
 }
 
 .navhead {
     @apply flex-grow-0 mb-6 p-2 flex flex-col items-center;
-    & .iconimg {
+    .iconimg {
         @apply w-16 flex-initial block rounded-md shadow-md;
     }
 }
 
 .xs-distext {
-    /* Descriptive text size extra-small */
+    /* 描述文本 size extra-small */
     @apply text-gray-500 text-xs font-source;
 }
 
@@ -44,7 +47,7 @@
 }
 
 .md-headtext {
-    /* Header text size medium */
+    /* 标题文本 size medium */
     @apply text-gray-500 text-base font-source font-bold;
 }
 
@@ -53,13 +56,15 @@
 }
 
 .func-container {
-    /* Siderbar function buttons' container */
+    /* 侧边栏按钮容器 */
     @apply flex-initial flex flex-col justify-center self-stretch;
 }
 
 .func-button {
+    /* 侧边栏按钮 */
     @apply py-2 border-l-4 border-black border-opacity-0;
     &.active {
+        /* 点击状态 */
         @apply border-opacity-50;
     }
 }
@@ -67,7 +72,7 @@
 .button-link {
     @apply p-2 flex flex-col items-center;
 }
-/* Applied to many ↑↓ */
+/* 注:应用于多个元素 ↑↓ */
 .button-icon {
     @apply my-2 text-gray-500 filter drop-shadow-md;
 }
@@ -77,24 +82,25 @@
 }
 
 .hr35 {
-    /* Division bar */
+    /* 分割线 长度3/5 */
     @apply mx-auto w-3/5 border-black border-opacity-10;
 }
 
 .content-nav {
+    /* 内容区导航栏 */
     @apply ml-2 flex flex-row justify-between items-center;
 
-    & .searchbar {
+    .searchbar {
         @apply bg-gray-200 rounded-md overflow-hidden;
     }
 
-    & .grouped-buttons {
+    .grouped-buttons {
         @apply h-8 flex flex-initial justify-around items-center;
 
-        & li {
+        li {
             @apply p-2 md:px-4;
 
-            & a {
+            a {
                 @apply block;
             }
         }
@@ -106,20 +112,23 @@
 }
 
 .cards-wrapper {
+    /* 卡片自适应容器 */
     @apply flex flex-col;
 
-    & .inner-wrapper-1 {
+    .inner-wrapper-1 {
         @apply flex-auto flex flex-col flex-wrap lg:flex-row;
     }
 
-    & .inner-wrapper-2 {
+    .inner-wrapper-2 {
         @apply flex-auto flex flex-col flex-wrap md:flex-row;
     }
 }
 
 .card {
+    /* 卡片 */
     @apply mx-2 mb-4 flex-auto bg-gray-200 rounded-md shadow-md;
 
+    /* 卡片尺寸 */
     &.card-lg {
         @apply max-w-full;
         & .cardcontent {
@@ -141,29 +150,31 @@
         }
     }
 
-    & .cardhead {
+    /* 卡片分区 */
+    .cardhead {
         @apply  p-4 h-12 flex flex-initial justify-between items-center;
     }
 
-    & .cardbody {
+    .cardbody {
         @apply w-full px-4 pb-4;
     }
 
-    & .cardcontent {
-        @apply w-full rounded-md;
+    .cardcontent {
+        @apply w-full rounded-md overflow-hidden;
     }
 }
 
 #foot {
-    @apply p-2 flex justify-between items-end xs:items-center;
+    /* 页脚 */
+    @apply p-2 flex justify-between items-end sm:items-center;
 
-    & p {
+    p {
         @apply flex flex-wrap md:block;
 
-        & a {
+        a {
             @apply m-1 block md:inline;
         }
-        & span {
+        span {
             @apply hidden md:inline;
         }
     }
